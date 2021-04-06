@@ -45,8 +45,8 @@ public class Ex05 {
 		if (stack.contains("둘리")) {
 			// System.out.println("존재함");
 			// 해당 객체의 위치값
-			System.out.println(stack.indexOf("둘리")+"번째 위치"); // 배열
-			System.out.println(stack.search("둘리")+"번째 위치");  // stack 
+			System.out.println(stack.indexOf("둘리")+"번째 위치");
+			System.out.println(stack.search("둘리")+"번째 위치");
 			// 해당 위치의 객체 꺼내기
 			System.out.println(stack.get(1));
 			System.out.println(stack.get(stack.indexOf("둘리")));
