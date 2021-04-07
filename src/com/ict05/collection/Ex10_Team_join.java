@@ -14,13 +14,11 @@ public class Ex10_Team_join {
 		list1.add("±è°æÇö");
 		list1.add("Çã»ù");
 		list1.add("»çÀ¯Áø");
-		
 		list1.add("À±Áö¹ü");
 		list1.add("ÀÌÀç¿í");
 		list1.add("±èÂùÈñ");
 		list1.add("³²±Ã¹Î");
 		list1.add("¹Ú¹Î¼­");
-		
 		list1.add("Á¤¿µÁ¦");
 		list1.add("ÃÖÁßÈÆ");
 		list1.add("ÃÖÁö¿ì");
