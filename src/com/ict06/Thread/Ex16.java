@@ -16,7 +16,7 @@ public class Ex16 implements Runnable {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-			}else if(x==51 || x==101) {
+			}else {
 				notify();
 			}
 		}
