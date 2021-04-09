@@ -22,7 +22,7 @@ public class Ex25_Input {
 			ois = new ObjectInputStream(bis);
 			
 			ArrayList<Ex25_VO> list = (ArrayList<Ex25_VO>)ois.readObject();
-			
+			/*
 			System.out.println("이름\t총점\t평균\t학점");
 			for (Ex25_VO k : list) {
 				System.out.print(k.getName()+"\t" );
@@ -30,11 +30,11 @@ public class Ex25_Input {
 				System.out.print(k.getAvg()+"\t" );
 				System.out.println(k.getHak());
 			}
-			
+			*/
 			//  정렬(?)
 			// 컬렉션을 배열로 변경해서 정렬
-			/*
-			Ex25_VO[]  arr = (Ex25_VO[]) list.toArray();
+			Ex25_VO[]  arr = (Ex25_VO[]) list.toArray(new Ex25_VO[5]);
+		
 			Ex25_VO tmp = new Ex25_VO();  // 임시저장
 		
 			for (int i = 0; i < arr.length-1; i++) {
@@ -54,7 +54,7 @@ public class Ex25_Input {
 				System.out.print(k.getAvg()+"\t" );
 				System.out.println(k.getHak());
 			}
-			*/
+			
 		} catch (Exception e) {
 			System.out.println(e);
 		} finally {
