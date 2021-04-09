@@ -33,7 +33,7 @@ public class Ex25_Input {
 			*/
 			//  정렬(?)
 			// 컬렉션을 배열로 변경해서 정렬
-			Ex25_VO[]  arr = (Ex25_VO[]) list.toArray(new Ex25_VO[5]);
+			Ex25_VO[]  arr = (Ex25_VO[]) list.toArray(new Ex25_VO[0]);
 		
 			Ex25_VO tmp = new Ex25_VO();  // 임시저장
 		
