@@ -15,11 +15,12 @@ class Ex07{
            int sum = kor + eng + math ;
            double avg = sum / 3.0 ;
            double avg2 = (int)(avg*10) /10.0 ; 
-          
+           double avg3 = (int)(sum/3.0*10)/10.0;
           // 원하는 정보 출력
           System.out.println("이름 : " + name); 
           System.out.println("총점 : " + sum);   
           System.out.println("평균 : " + avg2); 
+          System.out.println("평균 : " + avg3); 
          
         }
 }
