@@ -4,7 +4,7 @@ class Ex11{
 	// 비교연산자 : 변수나 상수의 값을 비교할때 사용
 	//              결과는 항상 boolean 이다.
 	//              boolean 형은 조건식에 사용된다.
-        //              자료형이 String인 경우에는 사용할지 말자 
+    //              자료형이 String인 경우에는 사용할지 말자 
          int s1 = 90 ;
          int s2 = 80 ;
          boolean res = s1 >= s2 ;
