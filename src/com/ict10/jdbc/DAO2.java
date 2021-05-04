@@ -34,7 +34,7 @@ public class DAO2 {
 		String password = "1111";
 		conn = DriverManager.getConnection(url, user, password);
 	} catch (Exception e) {
-		System.out.println(e);
+		System.out.println("1" + e);
 	}
 	return conn ;
    }
@@ -43,6 +43,9 @@ public class DAO2 {
    // 전체 정보 출력하는 메소드 
    public void getList() {
 	   try {
+		   // DB 접속
+		   conn = getConnection();
+		   
 		   String sql = "select * from book order by bookid";
 		   pstmt = conn.prepareStatement(sql);
 	       rs = pstmt.executeQuery();
@@ -54,7 +57,7 @@ public class DAO2 {
 	    	   System.out.println(rs.getInt("price"));
 	       }
 	   } catch (Exception e) {
-		System.out.println(e);
+		System.out.println("2" + e);
 	   } finally {
 		  try {
 			 rs.close();
@@ -68,6 +71,7 @@ public class DAO2 {
    // 삽입하는 메소드
    public void getInsert(int i_bookid, String i_bookname, String i_publisher, int i_price) {
 	   try {
+		   conn = getConnection();
 		   String sql = "insert into book values(?,?,?,?)";
 		   pstmt = conn.prepareStatement(sql);
 		   pstmt.setInt(1, i_bookid);
@@ -93,6 +97,7 @@ public class DAO2 {
    // 삭제하는 메소드
    public void getDelete(int i_bookid) {
 	   try {
+		   conn = getConnection();
 		   String sql = "delete from book where bookid = ?";
 		   pstmt = conn.prepareStatement(sql);
 	       pstmt.setInt(1,i_bookid);
@@ -113,6 +118,7 @@ public class DAO2 {
    // 검색하는 메소드 
    public void getSelect(int i_bookid) {
 	   try {
+		   conn = getConnection();
 		   String sql = "select * from book where bookid = ?";
 		   pstmt = conn.prepareStatement(sql);
 	       pstmt.setInt(1,i_bookid);
@@ -138,6 +144,7 @@ public class DAO2 {
    // 수정하는 메소드
    public void getUpdate(int i_bookid, String i_bookname, String i_publisher, int i_price) {
 	   try {
+		   conn = getConnection();
 		   String sql = "update book set bookname=?, publisher=?, price=? where bookid=?";
 		   pstmt = conn.prepareStatement(sql);
 	       pstmt.setString(1,i_bookname);

@@ -7,8 +7,8 @@ public class Ex06 {
 		Scanner scan = new Scanner(System.in);
 		
 		esc:while(true) {
-			DAO dao = new DAO();
-			dao.getList();
+			DAO2.getInstance().getList();
+			
 			System.out.println("=========================================");
 			System.out.println("다음을 선택하세요");
 			System.out.println("1.삽입하기");
@@ -33,8 +33,7 @@ public class Ex06 {
 					int i_price = scan.nextInt();
 					
 					// 삽입하는 메소드 
-					DAO i_dao  = new DAO();
-					i_dao.getInsert(i_bookid, i_bookname, i_publisher, i_price);
+					DAO2.getInstance().getInsert(i_bookid, i_bookname, i_publisher, i_price);
 					break;
 					
 				case "3":  
@@ -47,22 +46,19 @@ public class Ex06 {
 					System.out.print("price : ");
 					int u_price = scan.nextInt();
 					// 수정하는 메소드 
-					DAO u_dao = new DAO();
-					u_dao.getUpdate(u_bookid, u_bookname, u_publisher, u_price);
+					DAO2.getInstance().getUpdate(u_bookid, u_bookname, u_publisher, u_price);
 					break;
 				case "2": 
 					System.out.println("삭제할 bookid : ");
 				    int delete_id = scan.nextInt(); 
 				    // 삭제할 메소드
-				    DAO d_dao = new DAO();
-				    d_dao.getDelete(delete_id);
+				    DAO2.getInstance().getDelete(delete_id);
 				    break;
 				case "4": 
 					System.out.println("검색할 id : "); 
 				    int select_id = scan.nextInt(); 
 				    // 검색할 메소드 
-				    DAO r_dao = new DAO();
-				    r_dao.getSelect(select_id);
+				    DAO2.getInstance().getSelect(select_id);
 				    break;
 			    default: 
 			    	System.out.println("제대로 선택하세요");
@@ -82,8 +78,7 @@ public class Ex06 {
 			
 		}
 		System.out.println("변경된 내용입니다.");
-		DAO dao = new DAO();
-		dao.getList();
+		DAO2.getInstance().getList();
 		
 	}
 }
