@@ -1,4 +1,4 @@
-package com.ict09.jdbc;
+package com.ict10.jdbc;
 
 public class VO {
     
