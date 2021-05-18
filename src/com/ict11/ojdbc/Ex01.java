@@ -4,8 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.Scanner;
 
+
+// book 테이블 보기 
 public class Ex01 {
 	public static void main(String[] args) {
 		// DB 처리에 필요한 클래스 

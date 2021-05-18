@@ -55,7 +55,7 @@ public class Ex06 {
 				    DAO2.getInstance().getDelete(delete_id);
 				    break;
 				case "4": 
-					System.out.println("검색할 id : "); 
+					System.out.println("검색할 bookid : "); 
 				    int select_id = scan.nextInt(); 
 				    // 검색할 메소드 
 				    DAO2.getInstance().getSelect(select_id);

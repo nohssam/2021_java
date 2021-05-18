@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 // DAO란 Data Access Object의 약어로서 실질적으로 DB에 접근하는 객체를 말한다.
 // DAO의 사용 이유는 효율적인 커넥션 관리와 보안성 때문이다.
-// DAO(Data Access Object)는 DB를 사용해 데이터를 조화하거나
+// DAO(Data Access Object)는 DB를 사용해 데이터를 조회하거나
 //                           조작하는 기능을 전담하도록 만든 오브젝트를 말한다.
 public class DAO2 {
    Connection conn ;
