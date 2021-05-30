@@ -6,8 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/study/util/01_프로그래밍활용/json_simple-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/study/util/04_SQL활용/mysql-connector-java-8.0.22.jar"/>
-	<classpathentry kind="lib" path="C:/study/util/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.22.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
